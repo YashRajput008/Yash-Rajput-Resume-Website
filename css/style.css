@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&display=swap");
+
 :root {
   --bgc1: #12181b;
   --bgc2: #2b3941;
   --bgc3: #445a67;
   --bgc4: #445a67;
   --text-clr1: #edf0f1;
+  --btn-clr1: rgb(241, 150, 14);
 }
 
 * {
@@ -31,12 +34,24 @@ header {
 }
 
 .introText {
-  background-color: #f97316;
-  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #f97316;
+  font-size: 30px;
+  background-color: var(--bgc4);
+  border-radius: 15px;
 }
 
 .logo {
   cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--btn-clr1);
+  font-size: 30px;
+  /* transition: all 0.3s ease 0s; */
+  transition: margin-right 2s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0px 0px 10px #f97316);
 }
 
 .nav__links {
@@ -50,4 +65,17 @@ header {
 
 .nav__links li a {
   transition: all 0.3s ease 0s;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: var(--btn-clr1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all ls ease 0.3s;
+}
+
+button:hover {
+  filter: drop-shadow(0px 0px 10px #f97316);
 }
