@@ -1,0 +1,14 @@
+:root {
+  --bgc1: #12181b;
+  --bgc2: #2b3941;
+  --bgc3: #445a67;
+  --bgc4: #445a67;
+  --text-clr1: #edf0f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgc2);
+}

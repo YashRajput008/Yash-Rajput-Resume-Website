@@ -1,0 +1,53 @@
+:root {
+  --bgc1: #12181b;
+  --bgc2: #2b3941;
+  --bgc3: #445a67;
+  --bgc4: #445a67;
+  --text-clr1: #edf0f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgc2);
+}
+
+li,
+a,
+button {
+  font-family: "Stick No Bills", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--text-clr1);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.introText {
+  background-color: #f97316;
+  color: white;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
