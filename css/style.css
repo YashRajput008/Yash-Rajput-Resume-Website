@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Stick+No+Bills&family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Stick+No+Bills&family=Amatic+SC:wght@700&family=DM+Mono:wght@300;400;500&display=swap");
 /* Fonts:
 font-family: 'Barlow Condensed', sans-serif;
 font-family: 'Bebas Neue', sans-serif;
@@ -21,6 +21,7 @@ font-family: 'Amatic SC', sans-serif;
   --text-clr1: #edf0f1;
   --btn-clr: rgb(241, 150, 14);
   --btn-clr-hover: #f97316;
+  --card-clr: #17141d;
 }
 
 /* Start Heading */
@@ -102,4 +103,43 @@ button:hover {
   width: 25%;
   float: right;
   -webkit-filter: drop-shadow(0 0 10px var(--btn-clr-hover));
+}
+
+/* End Introduction + profile */
+
+/* Start Activities */
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+  color: white;
+  font-family: "DM Mono", monospace;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+
+  border-radius: 15px;
+  background: var(--bgc2);
+  box-shadow: -1rem 0 3rem var(--bgc1);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(70px);
+}
+
+.card:not(:first-child) {
+  margin-left: -70px;
 }
