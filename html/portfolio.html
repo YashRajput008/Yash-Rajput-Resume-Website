@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Rajput's Personal Webpage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #1a1a1a;
+        padding: 20px;
+        text-align: center;
+        color: #f39c12;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+      }
+      nav a {
+        color: #fff;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      nav a:hover {
+        background-color: #575757;
+      }
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        color: #f39c12;
+      }
+      .section {
+        margin-bottom: 40px;
+      }
+      footer {
+        background-color: #1a1a1a;
+        color: #bbb;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      .awards-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .awards-list li {
+        background-color: #444;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .contact-form {
+        max-width: 600px;
+        margin: auto;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #f39c12;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+      }
+      .contact-form input[type="submit"] {
+        background-color: #f39c12;
+        color: #fff;
+        cursor: pointer;
+      }
+      .contact-form input[type="submit"]:hover {
+        background-color: #e67e22;
+      }
+      .about-section {
+        display: flex;
+        align-items: center;
+      }
+      .about-section img {
+        max-width: 200px;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Yash Rajput</h1>
+      <p>Varsity Athlete | Aspiring Engineer | Science Enthusiast</p>
+    </header>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+      <div id="about" class="section about-section">
+        <img src="../assets/graduationimage-nobg.png" alt="Yash Rajput" />
+        <div>
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm Yash Rajput, a varsity cross country and tennis athlete,
+            and a rising sophomore at Colonia High School. I've won numerous
+            academic prizes at science fairs and competitions. I have a deep
+            love for the sciences and spend most of my time learning more about
+            them. I'm particularly interested in engineering and look forward to
+            pursuing it further.
+          </p>
+        </div>
+      </div>
+      <div id="awards" class="section">
+        <h2>Awards</h2>
+        <ul class="awards-list">
+          <li>First Place in the Regional Science Fair 2023</li>
+          <li>Gold Medal in State Level Math Competition 2022</li>
+          <li>Varsity Cross Country MVP 2023</li>
+          <li>Excellence in Engineering Award 2022</li>
+          <!-- Add more awards as needed -->
+        </ul>
+      </div>
+      <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <input type="submit" value="Send Message" />
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Yash Rajput. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

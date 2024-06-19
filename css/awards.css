@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Stick+No+Bills&family=Amatic+SC:wght@700&family=DM+Mono:wght@300;400;500&display=swap");
+
 :root {
   --bgc1: #12181b;
   --bgc2: #2b3941;
   --bgc3: #445a67;
   --bgc4: #445a67;
   --text-clr1: #edf0f1;
+  --btn-clr: rgb(241, 150, 14);
+  --btn-clr-hover: #f97316;
+  --card-clr: #17141d;
 }
 
 * {
@@ -12,3 +17,125 @@
   padding: 0;
   background-color: var(--bgc2);
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+
+  padding: 3rem;
+  justify-content: center; /* Center the cards */
+  color: white;
+  font-family: "DM Mono", monospace;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 2rem;
+
+  min-width: 250px;
+  padding: 1.5rem;
+  flex: 1 1 300px; /* Allow flexibility and wrap */
+
+  border-radius: 15px;
+  background: var(--bgc2);
+  box-shadow: -1rem 0 3rem var(--bgc1);
+  transition: 0.2s;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px; /* Allow flexibility and wrap */
+  max-width: 800px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: var(--bgc2);
+  box-shadow: -1rem 0 3rem var(--bgc1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(70px);
+}
+
+.card:not(:first-child) {
+  margin-left: -70px;
+}
+
+.sub-awards {
+  text-decoration-style: wavy;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card-div h2,
+.card-div h3,
+.card-div p {
+  margin-bottom: 0.5rem; /* Ensure spacing between elements */
+}
+
+/* Start Heading */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--btn-clr);
+  font-size: 30px;
+  cursor: pointer;
+  transition: margin-right 2s ease-in-out;
+}
+
+li,
+a,
+button {
+  font-family: "Stick No Bills", sans-serif;
+  color: var(--text-clr1);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+button {
+  background-color: var(--btn-clr);
+  border-radius: 50px;
+  border: none;
+  padding: 9px 25px;
+  cursor: pointer;
+  transition: all ls ease 0.3s;
+}
+
+button:hover {
+  filter: drop-shadow(0px 0px 10px var(--btn-clr-hover));
+}
+
+/* End Heading */

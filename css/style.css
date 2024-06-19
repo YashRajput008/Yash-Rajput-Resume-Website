@@ -107,39 +107,6 @@ button:hover {
 
 /* End Introduction + profile */
 
-/* Start Activities */
-
-.card-list {
-  display: flex;
-  padding: 3rem;
-  overflow-x: scroll;
-  color: white;
-  font-family: "DM Mono", monospace;
-}
-
-.card {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  height: 350px;
-  width: 400px;
-  min-width: 250px;
-  padding: 1.5rem;
-
-  border-radius: 15px;
-  background: var(--bgc2);
-  box-shadow: -1rem 0 3rem var(--bgc1);
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-1rem);
-}
-
-.card:hover ~ .card {
-  transform: translateX(70px);
-}
-
-.card:not(:first-child) {
-  margin-left: -70px;
+.introImage {
+  float: left;
 }
