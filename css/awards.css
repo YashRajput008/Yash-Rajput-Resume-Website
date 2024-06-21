@@ -125,7 +125,7 @@ button {
   transition: all 0.3s ease 0s;
 }
 
-button {
+.cta {
   background-color: var(--btn-clr);
   border-radius: 50px;
   border: none;
@@ -134,7 +134,7 @@ button {
   transition: all ls ease 0.3s;
 }
 
-button:hover {
+.cta:hover {
   filter: drop-shadow(0px 0px 10px var(--btn-clr-hover));
 }
 
