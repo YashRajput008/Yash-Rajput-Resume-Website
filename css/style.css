@@ -93,6 +93,11 @@ button {
   border-radius: 15px;
   font-size: 30px;
   width: 70%; /* Adjusted width */
+  transition: transform 1s;
+}
+
+.introText:hover {
+  transform: translateY(-1rem);
 }
 
 .title {
@@ -108,68 +113,66 @@ img {
   margin-left: 100px;
   margin-top: 20px;
   outline: 5px solid var(--btn-clr-hover);
+  transition: transform 2.5s;
 }
 
 img:hover {
   -webkit-filter: drop-shadow(0 0 10px var(--btn-clr-hover));
-  transition: all ls ease 0.3s;
+  transform: translateY(-1rem);
+  cursor: pointer;
 }
 /* End Introduction + profile */
-
 .leadership {
+  padding: 40px 5%;
+}
+
+.leadership-title {
+  letter-spacing: 3px;
+  padding: 20px;
+}
+
+.leadership h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--btn-clr);
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.leadership-cards {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px;
   justify-content: center;
-  margin: 0px;
-  font-family: "Stick No Bills", sans-serif;
 }
 
-.slider-container {
-  overflow: hidden;
-  width: 70%;
-  margin: auto;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  background-color: var(--card-clr);
-  color: var(--text-clr1);
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for card effect */
-  margin: 10px; /* Space between cards */
-  transition: transform 0.3s ease;
-}
-
-.slide h1 {
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-
-.slide p {
-  font-size: 18px;
-}
-
-#next,
-#prev {
-  background-color: var(--btn-clr);
-  border: none;
-  color: var(--text-clr1);
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: "Stick No Bills", sans-serif;
-  margin: 10px;
+.leadership-card {
+  background-color: var(--bgc4);
   border-radius: 1rem;
+  padding: 50px;
+  width: 600px;
+  transition: transform 0.5s;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 3.2);
 }
 
-#next:hover,
-#prev:hover {
-  background-color: var(--btn-clr-hover);
+.leadership-card h3 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 30px;
+  color: var(--btn-clr);
+  margin-bottom: 10px;
+  background: none;
+}
+
+.leadership-card p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  color: var(--text-clr1);
+  line-height: 1.5;
+  background: none;
+}
+
+.leadership-card:hover {
+  transform: translateY(-1rem);
+  transform: scale(1.1);
+  background: linear-gradient(45deg, black, rgb(23, 23, 74));
 }
