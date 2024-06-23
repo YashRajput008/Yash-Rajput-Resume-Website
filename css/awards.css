@@ -61,6 +61,7 @@ body {
 }
 .card:hover {
   transform: translateY(-1rem);
+  scale: 1.09;
 }
 
 .card:hover ~ .card {
