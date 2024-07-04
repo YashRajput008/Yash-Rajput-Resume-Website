@@ -21,6 +21,7 @@
 /* Start Heading */
 
 header {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,6 +78,17 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  right: 500px;
+}
+
+.name,
+.email,
+.msg,
+.submit {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-right: 400px;
 }
 
 .name,
@@ -91,15 +103,13 @@ button {
   letter-spacing: 1px;
   max-width: 900px;
   width: 100%;
-  margin: 50px;
   transition: transform 0.3s;
 }
 
 .name:hover,
 .email:hover,
 .msg:hover {
-  transform: scale(1.2);
-  background: linear-gradient(45deg, var(--btn-clr-hover), rgba(0, 0, 0, 0.2));
+  transform: scale(1.02);
   cursor: pointer;
 }
 
@@ -124,6 +134,9 @@ textarea {
   color: white;
   font-family: "Barlow Condensed", sans-serif;
   max-width: 900px;
+  box-sizing: border-box;
+  resize: both;
+  width: 100%;
 }
 
 .submit {
@@ -140,10 +153,10 @@ textarea {
   background-image: linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
   transition: transform 0.3s;
   transition: all 0.3s ease-in-out;
-  margin-left: 2 * (screen/2);
+  margin: 0 auto;
 }
 
 .submit:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
 }

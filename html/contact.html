@@ -31,7 +31,17 @@
     <main>
       <section>
         <div class="contact-container">
-          <form action="#" method="post">
+          <form
+            class="form"
+            action="https://api.web3forms.com/submit"
+            method="post"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="759c4703-c269-4af1-adb9-0ba176568a56"
+            />
+
             <div class="form-group name">
               <label class="center" for="name">Name:</label>
               <br />
@@ -55,8 +65,18 @@
               ></textarea>
             </div>
 
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
             <button class="submit" type="submit">Send</button>
           </form>
+        </div>
+        <div class="contact-image">
+          <img src="" alt="" />
         </div>
       </section>
     </main>
